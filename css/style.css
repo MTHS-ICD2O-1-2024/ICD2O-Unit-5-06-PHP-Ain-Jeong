@@ -15,14 +15,14 @@
 }
 
 .page-content-guide {
-  color: white;
+  color: black;
   font-family: Helvetica, Arial, sans-serif;
   font-size: 1.3rem;
   padding-bottom: 20pt;
 }
 
 .page-content {
-  color: white;
+  color: black;
   font-family: Helvetica, Arial, sans-serif;
   font-size: 1.7rem;
   padding-left: 10pt;
@@ -31,7 +31,7 @@
 }
 
 .page-content-answer {
-  color: white;
+  color: black;
   font-family: Helvetica, Arial, sans-serif;
   font-size: 1.7rem;
   padding-top: 20pt;
@@ -39,7 +39,7 @@
 }
 
 .page-content-return {
-  color: white;
+  color: black;
   padding-top: 10pt;
 }
 

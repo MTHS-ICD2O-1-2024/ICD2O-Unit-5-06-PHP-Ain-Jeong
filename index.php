@@ -30,27 +30,18 @@
         <img src="./images/multiplication.png" alt="Multiplication image" width="500" />
       </div>
       <br />
-      <div class="page-content-guide">Please enter the three lengths of your triangle.</div>
+      <div class="page-content-guide">Enter two numbers to multiply:</div>
       <div class="page-content">
         <form action="./answer.php" method="GET">
-          <label>Side a: </label>
           <div class="mdl-textfield mdl-js-textfield">
-            <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" name="side-a" />
-            <label class="mdl-textfield__label" for="side-a">Enter without the unit</label>
+            <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" name="first-number" />
+            <label class="mdl-textfield__label" for="first-number">Your first number here...</label>
             <span class="mdl-textfield__error">Input is not a number!</span>
           </div>
-          <br />
-          <label>Side b: </label>
+          <label>×</label>
           <div class="mdl-textfield mdl-js-textfield">
-            <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" name="side-b" />
-            <label class="mdl-textfield__label" for="side-b">Enter without the unit</label>
-            <span class="mdl-textfield__error">Input is not a number!</span>
-          </div>
-          <br />
-          <label>Side c: </label>
-          <div class="mdl-textfield mdl-js-textfield">
-            <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" name="side-c" />
-            <label class="mdl-textfield__label" for="side-c">Enter without the unit</label>
+            <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" name="second-number" />
+            <label class="mdl-textfield__label" for="second-number">Your second number here...</label>
             <span class="mdl-textfield__error">Input is not a number!</span>
           </div>
           <br />
@@ -59,7 +50,7 @@
       <!-- Accent-colored raised button with ripple -->
       <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
         type="submit">
-        Check
+        Calculate
       </button>
       </form>
   </div>

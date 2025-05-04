@@ -33,47 +33,17 @@
         <div id="answer">
           <?php
           // input
-          $sideA = $_GET["side-a"];
-          $sideB = $_GET["side-b"];
-          $sideC = $_GET["side-c"];
-
-          // using the cosine law
-          $angleA = acos(($sideB ** 2 + $sideC ** 2 - $sideA ** 2) / (2 * $sideB * $sideC)) *
-            (180 / M_PI);
-          $angleB = acos(($sideC ** 2 + $sideA ** 2 - $sideB ** 2) / (2 * $sideC * $sideA)) *
-            (180 / M_PI);
-          $angleC = acos(($sideA ** 2 + $sideB ** 2 - $sideC ** 2) / (2 * $sideA * $sideB)) *
-            (180 / M_PI);
-
-          $sumOfAngles = round($angleA, 2) + round($angleB, 2) + round($angleC, 2);
-
-          if ($sumOfAngles == 180) {
-            // process
-            if ($sideA == $sideB && $sideA == $sideC && $sideB == $sideC) {
-              // output
-              echo 'If your sides are: ' .
-                'Side a = ' . $sideA . ', ' .
-                'Side b = ' . $sideB . ', and' .
-                'Side c = ' . $sideC .
-                ', This is an Equilateral Triangle.';
-            } else if ($sideA === $sideC || $sideA === $sideB || $sideB === $sideC) {
-              // output
-              echo 'If your sides are: ' .
-                'Side a = ' . $sideA . ', ' .
-                'Side b = ' . $sideB . ', and' .
-                'Side c = ' . $sideC .
-                ', This is an Isosceles Triangle.';
-            } else {
-              // output
-              echo 'If your sides are: ' .
-                'Side a = ' . $sideA . ', ' .
-                'Side b = ' . $sideB . ', and' .
-                'Side c = ' . $sideC .
-                ', This is a Scalene Triangle.';
-            }
-          } else {
+          $counter = 0;
+          $answer = 0;
+          $firstNumber = $_GET["first-number"];
+          $secondNumber = $_GET["second-number"];
+          // process
+          while ($counter < $secondNumber) {
+            $counter = $counter + 1;
+            $answer = $answer + $firstNumber;
+          } {
             // output
-            echo 'This is not a triangle.';
+            echo $firstNumber . ' × ' . $secondNumber . " is " . $answer;
           }
           ?>
         </div>
